@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Full Disclosure — Autonomous Business Engine</title>
+<meta name="description" content="Complete FTC compliance disclosures for the Autonomous Business Engine blueprint product.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://autonomous-business-engine.terminalvelocityai.tech/disclosure">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:          #02060F;
+  --bg2:         #070E1A;
+  --surface:     #0C1525;
+  --surface2:    #111D2E;
+  --border:      #1A2B40;
+  --border2:     #243D58;
+  --gold:        #F59E0B;
+  --gold-lt:     #FCD34D;
+  --gold-dk:     #B45309;
+  --teal:        #0CCFC0;
+  --text:        #EFF6FF;
+  --text2:       #CBD5E1;
+  --muted:       #64748B;
+  --faint:       #334155;
+  --font:        'DM Sans', sans-serif;
+  --mono:        'Space Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+nav {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  background: rgba(2,6,15,.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo { display: flex; align-items: center; gap: .75rem; }
+.nav-logo svg { width: 32px; height: 32px; }
+.nav-wordmark {
+  font-family: var(--mono);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--text);
+  line-height: 1.2;
+}
+.nav-wordmark span { color: var(--gold); }
+
+.nav-links {
+  display: flex; align-items: center; gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: .85rem;
+  color: var(--muted);
+  transition: color .2s;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-lt) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: .75rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: .75rem;
+  color: var(--text2);
+}
+
+p { margin-bottom: 1rem; }
+
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li { margin-bottom: .5rem; }
+
+.section-label {
+  font-family: var(--mono);
+  font-size: .7rem;
+  color: var(--gold);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.disclaimer-box {
+  background: rgba(245,158,11,.08);
+  border: 1px solid rgba(245,158,11,.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  line-height: 1.7;
+}
+
+.disclaimer-box strong { color: var(--gold); }
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 4rem;
+  text-align: center;
+  font-size: .8rem;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  nav { padding: 0 1.5rem; }
+  main { padding: 2rem 1.5rem; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; }
+  footer { padding: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 3 L35 11.5 L35 28.5 L20 37 L5 28.5 L5 11.5 Z" stroke="#F59E0B" stroke-width="1.5" fill="none"/>
+      <circle cx="20" cy="20" r="4" fill="#F59E0B"/>
+    </svg>
+    <div class="nav-wordmark">AUTONOMOUS<br><span>BUSINESS ENGINE</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#how">How It Works</a></li>
+    <li><a href="/#pricing">Get the Blueprint</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="section-label">Legal & Compliance</div>
+  <h1>Full <em>Disclosure</em></h1>
+  <p style="color:var(--text2);margin-bottom:2rem;">Complete income, risk, and regulatory disclosures for the Autonomous Business Engine blueprint product. Please read carefully before purchasing.</p>
+
+  <h2>1. Company Information</h2>
+  <div class="disclaimer-box">
+    <p><strong>Business Name:</strong> Terminal Velocity AI</p>
+    <p><strong>Contact Email:</strong> integrinow@gmail.com</p>
+    <p><strong>Product:</strong> Autonomous Business Engine — A blueprint document (7,800+ lines) describing system architecture, agent design, marketing strategy, and exit mechanics for building autonomous AI-powered SaaS businesses.</p>
+  </div>
+
+  <h2>2. What You Are Purchasing</h2>
+  <p>The Autonomous Business Engine is an <strong>informational and educational product</strong> — not a service, software subscription, or guarantee of results.</p>
+  <p>You receive:</p>
+  <ul>
+    <li>Documentation files describing how to design, build, and operate autonomous SaaS businesses</li>
+    <li>System architecture diagrams and agent prompt templates</li>
+    <li>Marketing strategy guides and exit playbooks</li>
+    <li>Implementation checklists and configuration templates</li>
+  </ul>
+  <p>You do <strong>NOT</strong> receive:</p>
+  <ul>
+    <li>Running software or hosted services</li>
+    <li>Ongoing coaching or support</li>
+    <li>A guarantee of any specific business outcome or income</li>
+    <li>Personal implementation assistance</li>
+  </ul>
+
+  <h2>3. No Income Guarantee — Results Vary</h2>
+  <div class="disclaimer-box">
+    <p><strong>CRITICAL:</strong> This product makes NO GUARANTEE of income, earnings, or financial results.</p>
+    <p><strong>Typical Results:</strong> Most purchasers of business opportunity products earn little or no money. Some purchasers may earn significant income by successfully executing the system. Historical outcome data for this specific product is not yet available.</p>
+    <p>Your results will depend on your capital investment, technical skill, execution quality, market timing, and many factors outside this system's control.</p>
+  </div>
+
+  <h2>4. Risk Factors</h2>
+  <p>Building autonomous SaaS businesses involves significant risks:</p>
+  <ul>
+    <li><strong>Financial:</strong> You will invest capital in compute, marketing, and infrastructure with no guarantee of recovery.</li>
+    <li><strong>Technical:</strong> This system requires software development knowledge, cloud infrastructure expertise, and AI prompt engineering skill.</li>
+    <li><strong>Market:</strong> The SaaS market is highly competitive. Products may fail despite proper execution.</li>
+    <li><strong>Regulatory:</strong> Portfolio businesses may face IP claims, privacy regulations (GDPR, CCPA), data security requirements, and advertising compliance (FTC, state AGs).</li>
+    <li><strong>Execution:</strong> Implementation quality, consistency, and market adaptation all affect outcomes.</li>
+    <li><strong>Capital:</strong> Operating multiple SaaS businesses requires significant capital. Monthly costs can easily exceed $500–$2000+ per portfolio.</li>
+  </ul>
+
+  <h2>5. Refund Policy</h2>
+  <div class="disclaimer-box">
+    <p><strong>30-day money-back guarantee:</strong> Full refund within 30 days of purchase, regardless of whether materials have been downloaded or read.</p>
+  </div>
+
+  <h2>6. Business Opportunity Disclosure</h2>
+  <p>This product may qualify as a "business opportunity" under FTC regulations because it solicits purchasers to enter a business and involves a payment.</p>
+  <div class="disclaimer-box">
+    <p><strong>Earnings Status:</strong> Terminal Velocity AI makes no specific earnings guarantees. Documentation includes market opportunity framing and illustrative scenarios, but not guaranteed outcomes.</p>
+    <p><strong>Litigation History:</strong> Terminal Velocity AI has no litigation history related to business opportunity sales.</p>
+    <p><strong>Cancellation:</strong> 30-day refund policy applies (see Section 5).</p>
+  </div>
+
+  <h2>7. Educational Purpose Only</h2>
+  <div class="disclaimer-box">
+    <p>This product is for <strong>informational and educational purposes only.</strong></p>
+    <p>Terminal Velocity AI is <strong>NOT</strong> a registered investment adviser, financial adviser, legal adviser, or tax adviser. Nothing constitutes financial advice, legal advice, or tax advice. Consult appropriate professionals before making business decisions.</p>
+  </div>
+
+  <h2>8. Summary</h2>
+  <div class="disclaimer-box">
+    <p><strong>By purchasing, you acknowledge:</strong></p>
+    <ul style="margin-left: 1rem;">
+      <li>You have read this disclosure in full</li>
+      <li>This product is educational material, not a service or income guarantee</li>
+      <li>Results vary and most purchasers earn little or no income</li>
+      <li>You understand the risks of building autonomous businesses</li>
+      <li>You are responsible for your own decisions and legal compliance</li>
+    </ul>
+  </div>
+
+  <p style="margin-top:2rem;text-align:center;color:var(--muted);font-size:.85rem;">
+    Last updated: May 14, 2026<br>
+    © 2026 Terminal Velocity AI<br>
+    <a href="/">← Back to homepage</a>
+  </p>
+</main>
+
+<footer>
+  <p>© 2026 <a href="https://terminalvelocityai.tech/" target="_blank" rel="noopener">Terminal Velocity AI</a> | <a href="/">Home</a> | <a href="/disclosure">Disclosure</a></p>
+</footer>
+
+</body>
+</html>

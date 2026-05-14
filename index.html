@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+<title>Autonomous Business Engine — AI Agents That Build, Grow & Sell SaaS</title>
+<meta name="description" content="Claude Code and Gemini AI agents that research, build, grow, and sell profitable SaaS businesses — 94% autonomous, crypto-funded, designed for minimal owner time. Results vary.">
+<meta name="keywords" content="autonomous business, Claude Code AI agents, SaaS automation, crypto treasury, AI entrepreneur, passive income SaaS, autonomous AI business 2026">
+<meta name="author" content="Terminal Velocity AI">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://autonomous-business-engine.terminalvelocityai.tech/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://autonomous-business-engine.terminalvelocityai.tech/">
+<meta property="og:title" content="Autonomous Business Engine — AI Agents That Build, Grow & Sell SaaS">
+<meta property="og:description" content="A complete AI-agent system that builds profitable SaaS businesses from scratch — research, code, marketing, and exit — designed for minimal owner time. Results vary.">
+<meta property="og:site_name" content="Autonomous Business Engine">
+<meta property="og:image" content="https://autonomous-business-engine.terminalvelocityai.tech/og.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Autonomous Business Engine — AI Agents That Build & Sell SaaS">
+<meta name="twitter:description" content="94% autonomous. Claude Code + Gemini + crypto treasury. Minimal owner time required. Get the blueprint. Results vary.">
+<meta name="twitter:site" content="@terminalvelai">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Autonomous Business Engine",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "A complete AI-agent system using Claude Code and Gemini to autonomously research, build, grow, and sell profitable SaaS businesses, funded by a programmable crypto wallet.",
+  "offers": [
+    {"@type": "Offer", "name": "The Blueprint", "price": "47", "priceCurrency": "USD"},
+    {"@type": "Offer", "name": "The Full System", "price": "97", "priceCurrency": "USD"},
+    {"@type": "Offer", "name": "The Complete Playbook", "price": "197", "priceCurrency": "USD"}
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terminal Velocity AI",
+    "url": "https://terminalvelocityai.tech/"
+  }
+}
+</script>
+
+<!-- Favicon — inline SVG, same mark as logo -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 3 L35 11.5 L35 28.5 L20 37 L5 28.5 L5 11.5 Z' stroke='%23F59E0B' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='20' cy='20' r='4' fill='%23F59E0B'/%3E%3Ccircle cx='20' cy='6.5' r='2.2' fill='%23F59E0B' opacity='.75'/%3E%3Ccircle cx='31' cy='13' r='2.2' fill='%23F59E0B' opacity='.75'/%3E%3Ccircle cx='31' cy='27' r='2.2' fill='%23F59E0B' opacity='.75'/%3E%3Ccircle cx='20' cy='33.5' r='2.2' fill='%23F59E0B' opacity='.75'/%3E%3Ccircle cx='9' cy='27' r='2.2' fill='%23F59E0B' opacity='.75'/%3E%3Ccircle cx='9' cy='13' r='2.2' fill='%23F59E0B' opacity='.75'/%3E%3Cline x1='20' y1='16' x2='20' y2='8.7' stroke='%23F59E0B' stroke-width='.8' opacity='.5'/%3E%3Cline x1='20' y1='16' x2='29.2' y2='13.8' stroke='%23F59E0B' stroke-width='.8' opacity='.5'/%3E%3Cline x1='20' y1='24' x2='29.2' y2='26.2' stroke='%23F59E0B' stroke-width='.8' opacity='.5'/%3E%3Cline x1='20' y1='24' x2='20' y2='31.3' stroke='%23F59E0B' stroke-width='.8' opacity='.5'/%3E%3Cline x1='20' y1='24' x2='10.8' y2='26.2' stroke='%23F59E0B' stroke-width='.8' opacity='.5'/%3E%3Cline x1='20' y1='16' x2='10.8' y2='13.8' stroke='%23F59E0B' stroke-width='.8' opacity='.5'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ─── Design Tokens ─── */
+:root {
+  --bg:          #02060F;
+  --bg2:         #070E1A;
+  --surface:     #0C1525;
+  --surface2:    #111D2E;
+  --border:      #1A2B40;
+  --border2:     #243D58;
+  --gold:        #F59E0B;
+  --gold-lt:     #FCD34D;
+  --gold-dk:     #B45309;
+  --teal:        #0CCFC0;
+  --green:       #22C55E;
+  --blue:        #3B82F6;
+  --text:        #EFF6FF;
+  --text2:       #CBD5E1;
+  --muted:       #64748B;
+  --faint:       #334155;
+  --font:        'DM Sans', sans-serif;
+  --mono:        'Space Mono', monospace;
+  --r:           12px;
+  --r-sm:        8px;
+  --glow-gold:   0 0 40px rgba(245,158,11,.18), 0 0 80px rgba(245,158,11,.08);
+  --glow-teal:   0 0 40px rgba(12,207,192,.18), 0 0 80px rgba(12,207,192,.06);
+}
+
+/* ─── Reset ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ─── Grid Dot Background ─── */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0;
+  background-image:
+    radial-gradient(circle at 25% 0%, rgba(245,158,11,.07) 0%, transparent 55%),
+    radial-gradient(circle at 80% 60%, rgba(12,207,192,.05) 0%, transparent 50%),
+    radial-gradient(rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: auto, auto, 32px 32px;
+  pointer-events: none;
+}
+main, section, header, footer, nav { position: relative; z-index: 1; }
+
+/* ─── Navigation ─── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  background: rgba(2,6,15,.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-logo { display: flex; align-items: center; gap: .75rem; }
+.nav-logo svg { width: 32px; height: 32px; flex-shrink: 0; }
+.nav-wordmark {
+  font-family: var(--mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--text);
+  line-height: 1.2;
+}
+.nav-wordmark span { color: var(--gold); }
+.nav-links {
+  display: flex; align-items: center; gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--text); }
+.btn-nav {
+  padding: .45rem 1.1rem;
+  background: var(--gold);
+  color: #000;
+  border-radius: 6px;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  transition: background .2s, box-shadow .2s;
+}
+.btn-nav:hover { background: var(--gold-lt); box-shadow: 0 0 24px rgba(245,158,11,.4); }
+
+/* ─── Hero ─── */
+#hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 6rem 4rem 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .3rem .8rem;
+  background: rgba(245,158,11,.1);
+  border: 1px solid rgba(245,158,11,.25);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--gold);
+  letter-spacing: .08em;
+  margin-bottom: 1.5rem;
+}
+.hero-eyebrow::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+  animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .6; transform: scale(1.4); }
+}
+.hero-h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -.02em;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+.hero-h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-lt) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-sub {
+  font-size: 1.1rem;
+  color: var(--text2);
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+.hero-sub .typed-text {
+  color: var(--teal);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: clamp(1.44rem, 3vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -.025em;
+  line-height: 1.15;
+  text-shadow: 0 0 40px rgba(12,207,192,.3);
+  display: inline-block;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.hero-sub .cursor {
+  display: inline-block;
+  width: 2px; height: 1.15em;
+  background: var(--teal);
+  margin-left: 2px;
+  margin-right: 0;
+  vertical-align: baseline;
+  border-radius: 1px;
+  box-shadow: 0 0 12px var(--teal);
+  animation: blink .7s step-end infinite;
+  font-size: inherit;
+  line-height: 1;
+  position: relative;
+  top: 0.1em;
+}
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+.hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .8rem 1.8rem;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dk) 100%);
+  color: #000;
+  border-radius: var(--r-sm);
+  font-weight: 700;
+  font-size: .95rem;
+  transition: all .25s;
+  box-shadow: 0 4px 24px rgba(245,158,11,.3);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(245,158,11,.45); }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .8rem 1.8rem;
+  background: transparent;
+  color: var(--text2);
+  border: 1px solid var(--border2);
+  border-radius: var(--r-sm);
+  font-weight: 500;
+  font-size: .95rem;
+  transition: all .25s;
+}
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Hero stats */
+.hero-stats {
+  display: none;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 1.1rem 1rem;
+  text-align: center;
+  transition: border-color .25s, box-shadow .25s;
+}
+.stat-card:hover { border-color: rgba(245,158,11,.4); box-shadow: var(--glow-gold); }
+.stat-value {
+  font-family: var(--mono);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: .25rem;
+}
+.stat-label { font-size: .72rem; color: var(--muted); letter-spacing: .04em; }
+
+/* Hero visual */
+.hero-visual {
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.agent-network {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+.agent-network svg {
+  width: 100%; height: 100%;
+  animation: slowRotate 60s linear infinite;
+}
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.network-center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: none;
+}
+.network-center-ring {
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245,158,11,.2) 0%, rgba(245,158,11,.05) 60%, transparent 100%);
+  border: 2px solid rgba(245,158,11,.4);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  box-shadow: 0 0 40px rgba(245,158,11,.25);
+  animation: breathe 4s ease-in-out infinite;
+}
+@keyframes breathe {
+  0%,100% { box-shadow: 0 0 40px rgba(245,158,11,.25); }
+  50% { box-shadow: 0 0 60px rgba(245,158,11,.4); }
+}
+.network-center-ring .mono-label {
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: .08em;
+  line-height: 1.3;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ─── Section Shared ─── */
+.section {
+  padding: 6rem 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.section-label {
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--gold);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+.section-title {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  margin-bottom: 1rem;
+}
+.section-sub {
+  font-size: 1.05rem;
+  color: var(--text2);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* ─── Divider ─── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border2), transparent);
+  margin: 0 4rem;
+}
+
+/* ─── Phases ─── */
+#how { background: linear-gradient(180deg, transparent 0%, rgba(7,14,26,.6) 100%); }
+.phases-header { text-align: center; margin-bottom: 4rem; }
+.phases-header .section-sub { margin: 0 auto; }
+.phase-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  position: relative;
+}
+.phase-timeline::before {
+  content: '';
+  position: absolute;
+  top: 40px; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border2) 10%, var(--gold-dk) 50%, var(--border2) 90%, transparent);
+}
+.phase-card {
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.phase-num {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--surface2);
+  border: 1.5px solid var(--border2);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--mono);
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+  position: relative; z-index: 1;
+  transition: all .3s;
+}
+.phase-card.active .phase-num,
+.phase-card:hover .phase-num {
+  background: rgba(245,158,11,.15);
+  border-color: var(--gold);
+  color: var(--gold);
+  box-shadow: 0 0 24px rgba(245,158,11,.3);
+}
+.phase-icon { font-size: 1.5rem; margin-bottom: .75rem; }
+.phase-name {
+  font-family: var(--mono);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+  transition: color .3s;
+}
+.phase-card.active .phase-name,
+.phase-card:hover .phase-name { color: var(--gold); }
+.phase-desc { font-size: .82rem; color: var(--faint); line-height: 1.5; transition: color .3s; }
+.phase-card:hover .phase-desc { color: var(--muted); }
+
+.phase-detail {
+  margin-top: 3rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  min-height: 220px;
+  transition: all .3s;
+}
+.phase-detail-title {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--gold);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.phase-detail-body { font-size: .9rem; color: var(--text2); line-height: 1.7; }
+.phase-detail-items { list-style: none; }
+.phase-detail-items li {
+  font-size: .85rem;
+  color: var(--text2);
+  padding: .35rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex; gap: .6rem; align-items: flex-start;
+}
+.phase-detail-items li:last-child { border-bottom: none; }
+.phase-detail-items li::before { content: '→'; color: var(--gold); flex-shrink: 0; }
+
+/* ─── Agents ─── */
+#agents { }
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+.agent-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 1.5rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+.agent-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.agent-card:hover { border-color: rgba(245,158,11,.35); box-shadow: var(--glow-gold); }
+.agent-card:hover::before { opacity: 1; }
+.agent-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
+.agent-icon {
+  width: 44px; height: 44px;
+  border-radius: var(--r-sm);
+  background: rgba(245,158,11,.08);
+  border: 1px solid rgba(245,158,11,.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.agent-name { font-weight: 600; font-size: .95rem; margin-bottom: .2rem; }
+.agent-model {
+  font-family: var(--mono);
+  font-size: .65rem;
+  color: var(--teal);
+  letter-spacing: .06em;
+}
+.agent-desc { font-size: .83rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+.agent-budget {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .25rem .6rem;
+  background: rgba(34,197,94,.07);
+  border: 1px solid rgba(34,197,94,.2);
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: .65rem;
+  color: var(--green);
+}
+
+/* ─── Autonomy Score ─── */
+#autonomy {
+  background: linear-gradient(180deg, transparent 0%, rgba(7,14,26,.7) 50%, transparent 100%);
+}
+.autonomy-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+.autonomy-score-ring {
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  width: 200px; height: 200px;
+}
+.autonomy-score-ring svg { width: 200px; height: 200px; transform: rotate(-90deg); }
+.score-track { fill: none; stroke: var(--border2); stroke-width: 8; }
+.score-fill {
+  fill: none; stroke: url(#scoreGrad); stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 534;
+  stroke-dashoffset: 534;
+  transition: stroke-dashoffset 2s ease;
+}
+.score-fill.animate { stroke-dashoffset: 32; } /* 94% of 534 */
+.score-center {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.score-num {
+  font-family: var(--mono);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.score-pct { font-size: .75rem; color: var(--muted); margin-top: .25rem; }
+
+.autonomy-left { display: flex; flex-direction: column; gap: 2rem; }
+.autonomy-meter-row { display: flex; flex-direction: column; gap: 1.5rem; }
+.meter-item {}
+.meter-label {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: .5rem;
+}
+.meter-label-text { font-size: .85rem; color: var(--text2); }
+.meter-label-val {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--gold);
+}
+.meter-bar {
+  height: 4px;
+  background: var(--border2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.meter-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold-dk), var(--gold));
+  width: 0;
+  transition: width 1.5s ease;
+}
+
+.time-breakdown {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 1.75rem;
+}
+.time-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: .85rem;
+}
+.time-row:last-child { border-bottom: none; }
+.time-label { color: var(--text2); }
+.time-val {
+  font-family: var(--mono);
+  font-size: .78rem;
+  color: var(--teal);
+}
+.time-total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border2);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.time-total .time-label { font-weight: 600; color: var(--text); }
+.time-total .time-val {
+  font-size: 1rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* ─── Exit & Wealth ─── */
+#exit {}
+.exit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+.wealth-chart { display: flex; flex-direction: column; gap: .75rem; }
+.wealth-row { display: flex; align-items: center; gap: 1rem; }
+.wealth-label {
+  font-family: var(--mono);
+  font-size: .7rem;
+  color: var(--muted);
+  width: 70px;
+  flex-shrink: 0;
+  text-align: right;
+}
+.wealth-bar-wrap {
+  flex: 1;
+  height: 32px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  position: relative;
+}
+.wealth-bar {
+  height: 100%;
+  border-radius: var(--r-sm);
+  background: linear-gradient(90deg, rgba(245,158,11,.3), var(--gold));
+  display: flex; align-items: center; justify-content: flex-end;
+  padding-right: .6rem;
+  width: 0;
+  transition: width 1.8s ease;
+}
+.wealth-bar span {
+  font-family: var(--mono);
+  font-size: .68rem;
+  color: #000;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.exit-features { display: flex; flex-direction: column; gap: 1.25rem; }
+.exit-feature {
+  display: flex; gap: 1rem; align-items: flex-start;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  transition: border-color .25s;
+}
+.exit-feature:hover { border-color: rgba(245,158,11,.35); }
+.exit-feature-icon {
+  width: 38px; height: 38px;
+  border-radius: var(--r-sm);
+  background: rgba(245,158,11,.1);
+  border: 1px solid rgba(245,158,11,.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.exit-feature-title { font-weight: 600; font-size: .9rem; margin-bottom: .3rem; }
+.exit-feature-desc { font-size: .82rem; color: var(--muted); line-height: 1.5; }
+
+/* ─── Pricing ─── */
+#pricing {
+  background: linear-gradient(180deg, transparent 0%, rgba(7,14,26,.8) 100%);
+  text-align: center;
+}
+.pricing-header { margin-bottom: 3rem; }
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.price-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 2rem 1.75rem;
+  text-align: left;
+  position: relative;
+  transition: all .3s;
+}
+.price-card.featured {
+  background: linear-gradient(160deg, rgba(245,158,11,.08) 0%, var(--surface) 100%);
+  border-color: rgba(245,158,11,.5);
+  box-shadow: var(--glow-gold);
+}
+.price-badge {
+  position: absolute;
+  top: -12px; left: 50%; transform: translateX(-50%);
+  padding: .2rem .9rem;
+  background: var(--gold);
+  color: #000;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+.price-tier {
+  font-family: var(--mono);
+  font-size: .7rem;
+  color: var(--muted);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+.price-name { font-weight: 700; font-size: 1.15rem; margin-bottom: 1rem; }
+.price-amount {
+  display: flex; align-items: baseline; gap: .25rem;
+  margin-bottom: .35rem;
+}
+.price-dollar {
+  font-family: var(--mono);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.price-per { font-size: .8rem; color: var(--muted); }
+.price-desc { font-size: .82rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.5; }
+.price-features { list-style: none; margin-bottom: 2rem; display: flex; flex-direction: column; gap: .6rem; }
+.price-features li {
+  font-size: .83rem;
+  color: var(--text2);
+  display: flex; gap: .6rem; align-items: flex-start;
+}
+.price-features li::before { content: '✓'; color: var(--green); flex-shrink: 0; }
+.btn-buy {
+  display: block;
+  width: 100%;
+  padding: .85rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: .9rem;
+  border-radius: var(--r-sm);
+  transition: all .25s;
+}
+.btn-buy-outline {
+  background: transparent;
+  border: 1px solid var(--border2);
+  color: var(--text2);
+}
+.btn-buy-outline:hover { border-color: var(--gold); color: var(--gold); }
+.btn-buy-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dk));
+  color: #000;
+  border: none;
+  box-shadow: 0 4px 20px rgba(245,158,11,.3);
+}
+.btn-buy-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(245,158,11,.45); }
+
+.pricing-note {
+  margin-top: 2rem;
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+/* ─── Footer ─── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 3rem 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+.footer-brand { display: flex; flex-direction: column; gap: .75rem; }
+.footer-logo { display: flex; align-items: center; gap: .6rem; }
+.footer-logo svg { width: 28px; height: 28px; }
+.footer-logo-name {
+  font-family: var(--mono);
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.footer-tagline { font-size: .83rem; color: var(--muted); line-height: 1.6; }
+.footer-col-title {
+  font-family: var(--mono);
+  font-size: .7rem;
+  color: var(--gold);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
+.footer-links a {
+  font-size: .85rem;
+  color: var(--muted);
+  transition: color .2s;
+}
+.footer-links a:hover { color: var(--text); }
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .78rem;
+  color: var(--muted);
+}
+.footer-bottom a { color: var(--muted); transition: color .2s; }
+.footer-bottom a:hover { color: var(--gold); }
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+  #hero { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 2rem 3rem; }
+  .hero-visual { display: none; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .phase-timeline { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .phase-timeline::before { display: none; }
+  .phase-detail { grid-template-columns: 1fr; }
+  .autonomy-grid, .exit-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .section { padding: 4rem 2rem; }
+  .divider { margin: 0 2rem; }
+  nav { padding: 0 1.5rem; }
+  footer { padding: 2.5rem 1.5rem; }
+}
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .phase-timeline { grid-template-columns: 1fr; }
+  .agents-grid { grid-template-columns: 1fr; }
+  .hero-h1 { font-size: 1.75rem; }
+  .footer-bottom { flex-direction: column; gap: .75rem; text-align: center; }
+}
+
+/* ─── Income Disclaimer ─── */
+.income-disclaimer {
+  background: rgba(245,158,11,.05);
+  border: 1px solid rgba(245,158,11,.18);
+  border-radius: var(--r-sm);
+  padding: .75rem 1rem;
+  font-size: .73rem;
+  color: var(--muted);
+  line-height: 1.55;
+  margin-top: 1.25rem;
+}
+.income-disclaimer strong { color: var(--text2); }
+.scenario-label {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-family: var(--mono);
+  font-size: .62rem;
+  letter-spacing: .08em;
+  color: var(--muted);
+  background: rgba(100,116,139,.1);
+  border: 1px solid rgba(100,116,139,.2);
+  border-radius: 4px;
+  padding: .2rem .55rem;
+  margin-bottom: 1rem;
+}
+.legal-footer-bar {
+  background: rgba(2,6,15,.7);
+  border-top: 1px solid var(--border);
+  padding: 1.25rem 4rem;
+  font-size: .72rem;
+  color: var(--muted);
+  line-height: 1.6;
+  text-align: center;
+}
+.legal-footer-bar a { color: var(--gold); text-decoration: underline; }
+@media (max-width: 768px) {
+  .legal-footer-bar { padding: 1rem 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 3 L35 11.5 L35 28.5 L20 37 L5 28.5 L5 11.5 Z" stroke="#F59E0B" stroke-width="1.5" fill="none"/>
+      <circle cx="20" cy="20" r="4" fill="#F59E0B"/>
+      <circle cx="20" cy="6.5" r="2.2" fill="#F59E0B" opacity=".75"/>
+      <circle cx="31" cy="13" r="2.2" fill="#F59E0B" opacity=".75"/>
+      <circle cx="31" cy="27" r="2.2" fill="#F59E0B" opacity=".75"/>
+      <circle cx="20" cy="33.5" r="2.2" fill="#F59E0B" opacity=".75"/>
+      <circle cx="9" cy="27" r="2.2" fill="#F59E0B" opacity=".75"/>
+      <circle cx="9" cy="13" r="2.2" fill="#F59E0B" opacity=".75"/>
+      <line x1="20" y1="16" x2="20" y2="8.7" stroke="#F59E0B" stroke-width=".8" opacity=".5"/>
+      <line x1="20" y1="16" x2="29.2" y2="13.8" stroke="#F59E0B" stroke-width=".8" opacity=".5"/>
+      <line x1="20" y1="24" x2="29.2" y2="26.2" stroke="#F59E0B" stroke-width=".8" opacity=".5"/>
+      <line x1="20" y1="24" x2="20" y2="31.3" stroke="#F59E0B" stroke-width=".8" opacity=".5"/>
+      <line x1="20" y1="24" x2="10.8" y2="26.2" stroke="#F59E0B" stroke-width=".8" opacity=".5"/>
+      <line x1="20" y1="16" x2="10.8" y2="13.8" stroke="#F59E0B" stroke-width=".8" opacity=".5"/>
+    </svg>
+    <div class="nav-wordmark">AUTONOMOUS<br><span>BUSINESS ENGINE</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#agents">Agents</a></li>
+    <li><a href="#autonomy">Autonomy</a></li>
+    <li><a href="#exit">Exit Strategy</a></li>
+    <li><a href="#media">Learn</a></li>
+    <li><a href="#pricing" class="btn-nav">Get the Blueprint</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">LIVE SYSTEM · 2026</div>
+    <h1 class="hero-h1">Your business.<br>No staff.<br><em>20 minutes a week.</em></h1>
+    <p class="hero-sub">
+      <span style="font-size: 2.2rem; font-weight: 700; display: block; margin-bottom: 0.5rem;">The Solopreneur's Revolution.</span>
+      <span style="color:var(--gold);text-shadow:0 0 40px rgba(245,158,11,.3);">Autonomously Research, Build, Grow & Sell For Profit.</span>
+      <br><br>
+      Powered by Claude Code + Gemini.<br>Funded by your crypto wallet.
+    </p>
+    <div class="hero-ctas">
+      <a href="#pricing" class="btn-primary">Get the Blueprint →</a>
+      <a href="#how" class="btn-secondary">See How It Works</a>
+    </div>
+    <p class="income-disclaimer"><strong>Results vary.</strong> The "20 minutes a week" figure reflects the system's design target for routine ongoing operation, not a guaranteed outcome. Building a profitable autonomous business requires technical skill, capital, and consistent execution. There is no guarantee of any specific income. <a href="#disclaimer" style="color:var(--gold);text-decoration:underline;">Full disclaimer ↓</a></p>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-value" data-target="94">0</div>
+        <div class="stat-label">% AUTONOMOUS</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" data-target="20">0</div>
+        <div class="stat-label">MIN/WEEK OWNER TIME</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">5–10×</div>
+        <div class="stat-label">ARR (Annual Recurring Revenue) EXIT MULTIPLES</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">$25</div>
+        <div class="stat-label">/MO AI (Artificial Intelligence) OPERATING COST</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="agent-network">
+      <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#F59E0B" stop-opacity=".3"/>
+            <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+        </defs>
+
+        <!-- Outer orbit ring -->
+        <circle cx="210" cy="210" r="170" stroke="#1A2B40" stroke-width="1" fill="none" stroke-dasharray="4 8"/>
+        <!-- Middle orbit ring -->
+        <circle cx="210" cy="210" r="110" stroke="#1A2B40" stroke-width="1" fill="none" stroke-dasharray="2 6"/>
+
+        <!-- Connection lines (faint) -->
+        <line x1="210" y1="40" x2="210" y2="210" stroke="#F59E0B" stroke-width="0.5" opacity="0.2"/>
+        <line x1="357" y1="125" x2="210" y2="210" stroke="#F59E0B" stroke-width="0.5" opacity="0.2"/>
+        <line x1="357" y1="295" x2="210" y2="210" stroke="#F59E0B" stroke-width="0.5" opacity="0.2"/>
+        <line x1="210" y1="380" x2="210" y2="210" stroke="#F59E0B" stroke-width="0.5" opacity="0.2"/>
+        <line x1="63" y1="295" x2="210" y2="210" stroke="#F59E0B" stroke-width="0.5" opacity="0.2"/>
+        <line x1="63" y1="125" x2="210" y2="210" stroke="#F59E0B" stroke-width="0.5" opacity="0.2"/>
+
+        <!-- Node glows -->
+        <circle cx="210" cy="40" r="22" fill="url(#glow1)" filter="url(#blur1)"/>
+        <circle cx="357" cy="125" r="22" fill="url(#glow1)" filter="url(#blur1)"/>
+        <circle cx="357" cy="295" r="22" fill="url(#glow1)" filter="url(#blur1)"/>
+        <circle cx="210" cy="380" r="22" fill="url(#glow1)" filter="url(#blur1)"/>
+        <circle cx="63" cy="295" r="22" fill="url(#glow1)" filter="url(#blur1)"/>
+        <circle cx="63" cy="125" r="22" fill="url(#glow1)" filter="url(#blur1)"/>
+
+        <!-- Agent nodes -->
+        <circle cx="210" cy="40" r="32" fill="#0C1525" stroke="#F59E0B" stroke-width="2"/>
+        <text x="210" y="48" text-anchor="middle" fill="#F59E0B" font-size="24">🔍</text>
+
+        <circle cx="357" cy="125" r="32" fill="#0C1525" stroke="#14B8A6" stroke-width="2"/>
+        <text x="357" y="133" text-anchor="middle" fill="#14B8A6" font-size="24">⚙️</text>
+
+        <circle cx="357" cy="295" r="32" fill="#0C1525" stroke="#22C55E" stroke-width="2"/>
+        <text x="357" y="303" text-anchor="middle" fill="#22C55E" font-size="24">📈</text>
+
+        <circle cx="210" cy="380" r="32" fill="#0C1525" stroke="#F59E0B" stroke-width="2"/>
+        <text x="210" y="388" text-anchor="middle" fill="#F59E0B" font-size="24">💰</text>
+
+        <circle cx="63" cy="295" r="32" fill="#0C1525" stroke="#3B82F6" stroke-width="2"/>
+        <text x="63" y="303" text-anchor="middle" fill="#3B82F6" font-size="24">💳</text>
+
+        <circle cx="63" cy="125" r="32" fill="#0C1525" stroke="#A78BFA" stroke-width="2"/>
+        <text x="63" y="133" text-anchor="middle" fill="#A78BFA" font-size="24">🎨</text>
+      </svg>
+
+      <div class="network-center">
+        <div class="network-center-ring">
+          <div class="mono-label"><span style="font-size: 2.2rem; display: block;">🧠</span>CLAUDE<br>OPUS 4.7</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── HOW IT WORKS ─── -->
+<section id="how" class="section">
+  <div class="phases-header">
+    <div class="section-label">The System</div>
+    <h2 class="section-title">From signal to exit. Fully automated.</h2>
+    <p class="section-sub">Five phases. One continuous loop. Every step runs without you.</p>
+  </div>
+
+  <div class="phase-timeline" id="phaseTimeline">
+    <div class="phase-card active" data-phase="0">
+      <div class="phase-num">01</div>
+      <div class="phase-icon">🔍</div>
+      <div class="phase-name">Research</div>
+      <div class="phase-desc">Reddit, HN (Hacker News), X signal aggregation + 8-dimension scoring</div>
+    </div>
+    <div class="phase-card" data-phase="1">
+      <div class="phase-num">02</div>
+      <div class="phase-icon">✓</div>
+      <div class="phase-name">Validate</div>
+      <div class="phase-desc">$20 landing page test — 2% signup rate gates the build</div>
+    </div>
+    <div class="phase-card" data-phase="2">
+      <div class="phase-num">03</div>
+      <div class="phase-icon">⚙</div>
+      <div class="phase-name">Build</div>
+      <div class="phase-desc">Full Next.js + Neon + Stripe stack, built and deployed by AI</div>
+    </div>
+    <div class="phase-card" data-phase="3">
+      <div class="phase-num">04</div>
+      <div class="phase-icon">📈</div>
+      <div class="phase-name">Grow</div>
+      <div class="phase-desc">ROAS (Return On Ad Spend)-gated ads, SEO (Search Engine Optimisation) factory, email sequences — all autonomous</div>
+    </div>
+    <div class="phase-card" data-phase="4">
+      <div class="phase-num">05</div>
+      <div class="phase-icon">💰</div>
+      <div class="phase-name">Exit</div>
+      <div class="phase-desc">Live exit score, pre-sale sprint, auction engineering, LOI (Letter of Intent) playbook</div>
+    </div>
+  </div>
+
+  <div class="phase-detail" id="phaseDetail">
+    <div>
+      <div class="phase-detail-title">What happens in this phase</div>
+      <div class="phase-detail-body" id="phaseBody">
+        The Research Agent continuously monitors Reddit, Hacker News, Product Hunt, X, G2 reviews, and GitHub trending. Every signal is scored across 8 dimensions — pain intensity, market size, buildability, monetisability, competition gap, time-to-revenue, defensibility, and trend alignment. Only opportunities scoring ≥ 70/100 advance.
+      </div>
+    </div>
+    <div>
+      <div class="phase-detail-title">Automated actions</div>
+      <ul class="phase-detail-items" id="phaseActions">
+        <li>Aggregate signals from 8+ platforms daily</li>
+        <li>Score each opportunity across 8 weighted dimensions</li>
+        <li>Cross-reference against existing portfolio to avoid overlap</li>
+        <li>Generate structured opportunity report and store to knowledge base</li>
+        <li>Surface top 3 opportunities in weekly digest</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── AGENT STACK ─── -->
+<section id="agents" class="section">
+  <div class="section-label">Intelligence Layer</div>
+  <h2 class="section-title">7 specialised AI agents.<br>One orchestrated system.</h2>
+  <p class="section-sub">Each agent has a defined role, budget authority, and escalation path. Claude Opus 4.7 coordinates; specialised models execute.</p>
+
+  <div class="agents-grid">
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">🎯</div>
+        <div>
+          <div class="agent-name">Master Orchestrator</div>
+          <div class="agent-model">Claude Opus 4.7</div>
+        </div>
+      </div>
+      <div class="agent-desc">Reads business state, decomposes the mission, assigns sub-tasks, and approves all decisions above the micro-threshold. The strategic brain.</div>
+      <span class="agent-budget">Runs every 4 hours + on event triggers</span>
+    </div>
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">🔭</div>
+        <div>
+          <div class="agent-name">Research Agent</div>
+          <div class="agent-model">Claude Sonnet 4.6 + Brave Search</div>
+        </div>
+      </div>
+      <div class="agent-desc">Monitors market signals, scores opportunities, and validates ideas with $20 landing page tests. Never wastes build budget on unvalidated ideas.</div>
+      <span class="agent-budget">≤ $5 USDC (USD Coin) per research cycle</span>
+    </div>
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">🏗️</div>
+        <div>
+          <div class="agent-name">Engineering Agent</div>
+          <div class="agent-model">Claude Code — Sonnet 4.6</div>
+        </div>
+      </div>
+      <div class="agent-desc">Writes all application code, configures deployments, runs automated test suites, and commits to GitHub. Full-stack in 54–96 hours of AI time.</div>
+      <span class="agent-budget">≤ $20 USDC per deployment</span>
+    </div>
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">🎨</div>
+        <div>
+          <div class="agent-name">Creative Agent</div>
+          <div class="agent-model">Gemini 2.0 Pro + Imagen 3</div>
+        </div>
+      </div>
+      <div class="agent-desc">Generates all marketing creative — landing page copy, hero images, ad variants, demo videos, and email sequences. No designer required.</div>
+      <span class="agent-budget">≤ $10 USDC per creative sprint</span>
+    </div>
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">📣</div>
+        <div>
+          <div class="agent-name">Growth Agent</div>
+          <div class="agent-model">Claude Sonnet 4.6 + Marketing APIs (Application Programming Interfaces)</div>
+        </div>
+      </div>
+      <div class="agent-desc">Launches and optimises paid campaigns with ROAS-gated auto-scaling, runs SEO content factory, manages outbound sequences, and tracks all attribution.</div>
+      <span class="agent-budget">≤ $500 USDC/day (ROAS-gated)</span>
+    </div>
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">💎</div>
+        <div>
+          <div class="agent-name">Revenue Agent</div>
+          <div class="agent-model">Claude Haiku 4.5</div>
+        </div>
+      </div>
+      <div class="agent-desc">Monitors Stripe webhooks, routes profits to sub-wallets, pays vendor invoices in USDC, and sweeps the owner's 10% share automatically each month.</div>
+      <span class="agent-budget">Full treasury authority within parameters</span>
+    </div>
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">📊</div>
+        <div>
+          <div class="agent-name">Evolution Agent</div>
+          <div class="agent-model">Claude Opus 4.7 — weekly</div>
+        </div>
+      </div>
+      <div class="agent-desc">Reviews all P&L (Profit and Loss), customer feedback, and conversion data weekly. Proposes product pivots, runs prompt tournaments, and updates the master strategy.</div>
+      <span class="agent-budget">Runs once per week</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── AUTONOMY ─── -->
+<section id="autonomy" class="section">
+  <div class="section-label">Owner Time Commitment</div>
+  <h2 class="section-title">94% autonomous.<br>Designed for your life.</h2>
+  <p class="section-sub">The engine uses a proceed-unless-blocked model. It acts within your pre-approved parameter envelope and tells you what it did — not what it wants permission to do.</p>
+
+  <div class="autonomy-grid">
+    <div class="autonomy-left">
+      <div class="autonomy-meter-row">
+        <div class="meter-item">
+          <div class="meter-label">
+            <span class="meter-label-text">Market research & opportunity scoring</span>
+            <span class="meter-label-val">100% auto</span>
+          </div>
+          <div class="meter-bar"><div class="meter-fill" data-width="100"></div></div>
+        </div>
+        <div class="meter-item">
+          <div class="meter-label">
+            <span class="meter-label-text">Full-stack product build & deployment</span>
+            <span class="meter-label-val">100% auto</span>
+          </div>
+          <div class="meter-bar"><div class="meter-fill" data-width="100"></div></div>
+        </div>
+        <div class="meter-item">
+          <div class="meter-label">
+            <span class="meter-label-text">Paid ad creation, launch & optimisation</span>
+            <span class="meter-label-val">100% auto</span>
+          </div>
+          <div class="meter-bar"><div class="meter-fill" data-width="100"></div></div>
+        </div>
+        <div class="meter-item">
+          <div class="meter-label">
+            <span class="meter-label-text">SEO content factory & link building</span>
+            <span class="meter-label-val">100% auto</span>
+          </div>
+          <div class="meter-bar"><div class="meter-fill" data-width="100"></div></div>
+        </div>
+        <div class="meter-item">
+          <div class="meter-label">
+            <span class="meter-label-text">Customer support & churn prevention</span>
+            <span class="meter-label-val">100% auto</span>
+          </div>
+          <div class="meter-bar"><div class="meter-fill" data-width="100"></div></div>
+        </div>
+        <div class="meter-item">
+          <div class="meter-label">
+            <span class="meter-label-text">Treasury, billing & profit sweep</span>
+            <span class="meter-label-val">100% auto</span>
+          </div>
+          <div class="meter-bar"><div class="meter-fill" data-width="100"></div></div>
+        </div>
+        <div class="meter-item">
+          <div class="meter-label">
+            <span class="meter-label-text">Exit prep, listing & buyer qualification</span>
+            <span class="meter-label-val">100% auto</span>
+          </div>
+          <div class="meter-bar"><div class="meter-fill" data-width="100"></div></div>
+        </div>
+        <div class="meter-item">
+          <div class="meter-label">
+            <span class="meter-label-text">LOI review & purchase agreement signing</span>
+            <span class="meter-label-val">Human required</span>
+          </div>
+          <div class="meter-bar"><div class="meter-fill" data-width="6" style="background: linear-gradient(90deg, #334155, #64748B);"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display:flex;align-items:center;gap:2rem;margin-bottom:2rem;">
+        <div class="autonomy-score-ring">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#B45309"/>
+                <stop offset="100%" stop-color="#FCD34D"/>
+              </linearGradient>
+            </defs>
+            <circle class="score-track" cx="100" cy="100" r="85"/>
+            <circle class="score-fill" cx="100" cy="100" r="85" id="scoreFill"/>
+          </svg>
+          <div class="score-center">
+            <div class="score-num" id="scoreNum">0</div>
+            <div class="score-pct">AUTONOMY SCORE</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:.85rem;color:var(--muted);line-height:1.6;">The 6% that requires a human is irreducible — legal signatures, initial setup, and annual tax filing.<br><br>Everything else runs without you.</div>
+        </div>
+      </div>
+
+      <div class="time-breakdown">
+        <div class="phase-detail-title" style="margin-bottom:1rem;">Your weekly time budget</div>
+        <div class="time-row">
+          <span class="time-label">Weekly digest read</span>
+          <span class="time-val">5 min</span>
+        </div>
+        <div class="time-row">
+          <span class="time-label">One-tap approvals queue</span>
+          <span class="time-val">2 min</span>
+        </div>
+        <div class="time-row">
+          <span class="time-label">LOI / legal (annualised)</span>
+          <span class="time-val">11 min</span>
+        </div>
+        <div class="time-row">
+          <span class="time-label">Tax payments (annualised)</span>
+          <span class="time-val">1 min</span>
+        </div>
+        <div class="time-row">
+          <span class="time-label">Initial setup (one-time only)</span>
+          <span class="time-val">4–6 hrs</span>
+        </div>
+        <div class="time-total">
+          <span class="time-label">Ongoing total</span>
+          <span class="time-val">≈ 20 min/week</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── EXIT STRATEGY ─── -->
+<section id="exit" class="section">
+  <div class="section-label">Exit Strategy & Wealth</div>
+  <h2 class="section-title">Build. Sell. Compound.<br>Repeat.</h2>
+  <p class="section-sub">Every business is built for eventual sale at maximum multiple. Proceeds fund the next cohort — larger, faster, smarter.</p>
+
+  <div class="exit-grid">
+    <div>
+      <div class="phase-detail-title" style="margin-bottom:1.5rem;">Market Opportunity Overview</div>
+      <div style="font-size:.95rem;color:var(--text2);line-height:1.7;margin-bottom:1.5rem;">
+        <p style="margin-bottom:1rem;"><strong>The micro-SaaS opportunity:</strong> Founders and operators who successfully build, operate, and exit SaaS businesses have accessed a large addressable market. Public market exit data shows successful SaaS exits at 4–7× ARR (Annual Recurring Revenue) multiples, with companies in the $50K–$500K ARR range representing a common exit target.</p>
+        <p><strong>The autonomous model:</strong> This system is designed to reduce owner time investment and increase decision velocity across the business lifecycle. Success requires technical implementation, capital allocation, and favorable market timing — all factors outside this system's control.</p>
+      </div>
+      <p class="income-disclaimer" style="margin-top:1rem;"><strong>No income guarantee.</strong> This product provides system architecture and documentation. It does not guarantee earnings or outcomes. Most purchasers of business opportunity products earn little or no income. Success depends on your capital, technical skill, execution, and market conditions. Results vary significantly, and there is no typical result. <a href="/disclosure" style="color:var(--gold);text-decoration:underline;">See full disclaimer</a>.</p>
+      <div style="margin-top:1.25rem;padding:1rem;background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:var(--r-sm);">
+        <div style="font-family:var(--mono);font-size:.68rem;color:var(--gold);letter-spacing:.08em;margin-bottom:.5rem;">HYPOTHETICAL EXAMPLE — FOR ILLUSTRATION ONLY</div>
+        <div style="font-size:.82rem;color:var(--text2);line-height:1.7;">A SaaS product built for ~$800 in compute · 54 hours AI engineering · Operated 8 months · Hypothetical exit at <strong style="color:var(--gold);">$974,000</strong>. This example illustrates what the exit mechanics could produce; it is not a representation of actual customer results.</div>
+      </div>
+    </div>
+
+    <div class="exit-features">
+      <div class="exit-feature">
+        <div class="exit-feature-icon">📊</div>
+        <div>
+          <div class="exit-feature-title">Live Exit Score</div>
+          <div class="exit-feature-desc">An 8-signal composite score updated daily. Crosses 70 → sale prep begins. Hits 80 → owner is alerted and can approve listing on Acquire.com or MicroAcquire with a single confirmation. You stay in control of when — and whether — your business goes to market.</div>
+        </div>
+      </div>
+      <div class="exit-feature">
+        <div class="exit-feature-icon">🚀</div>
+        <div>
+          <div class="exit-feature-title">12-Month Pre-Sale Sprint</div>
+          <div class="exit-feature-desc">Price increases, annual plan conversion, churn hardening, review building, and cost optimisation — all executed automatically to maximise the multiple before listing.</div>
+        </div>
+      </div>
+      <div class="exit-feature">
+        <div class="exit-feature-icon">⚔️</div>
+        <div>
+          <div class="exit-feature-title">Auction Engineering</div>
+          <div class="exit-feature-desc">Structured 10-week sale process creating competitive tension between buyers. Strategic buyers warmed 12 months in advance. Average premium: 20–40% above first offer.</div>
+        </div>
+      </div>
+      <div class="exit-feature">
+        <div class="exit-feature-icon">📋</div>
+        <div>
+          <div class="exit-feature-title">LOI Negotiation Playbook</div>
+          <div class="exit-feature-desc">Pre-crafted seller narrative, earnout structure optimisation, re-trade prevention clauses, and non-compete scope negotiation — all documented and ready.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── NOTEBOOKLM MEDIA ─── -->
+<section id="media" class="section">
+  <div class="section-label">Learn the System</div>
+  <h2 class="section-title">Watch & Listen.<br>Study guides included.</h2>
+  <p class="section-sub">Audio podcast, explainer video, and comprehensive markdown study guides — generated by NotebookLM from the complete specification.</p>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; align-items: start;">
+    <!-- Video -->
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+        <video controls style="width: 100%; height: 100%; object-fit: cover;" controlsList="nodownload">
+          <source src="explainer.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div>
+        <div style="font-weight: 600; margin-bottom: .5rem;">🎬 Whiteboard Explainer Video</div>
+        <div style="font-size: .9rem; color: var(--muted); margin-bottom: 1rem;">57 MB · ~15 minutes · Animated system overview</div>
+        <a href="explainer.mp4" download style="display: inline-flex; align-items: center; gap: .5rem; padding: .65rem 1.4rem; background: transparent; border: 1px solid var(--border2); color: var(--text2); border-radius: var(--r-sm); font-weight: 500; font-size: .9rem; transition: all .25s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='var(--border2)'; this.style.color='var(--text2)';">⬇️ Download MP4</a>
+      </div>
+    </div>
+
+    <!-- Audio -->
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; aspect-ratio: 16/9; overflow: hidden;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">🎙️</div>
+        <audio controls style="width: 100%; margin-bottom: 1.5rem;">
+          <source src="podcast.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+        <div style="text-align: center; font-size: .85rem; color: var(--muted);">99 MB · ~32 minutes · Deep-dive podcast</div>
+      </div>
+      <div>
+        <div style="font-weight: 600; margin-bottom: .5rem;">🎙️ Deep-Dive Audio Podcast</div>
+        <div style="font-size: .9rem; color: var(--muted); margin-bottom: 1rem;">Complete system walkthrough in audio format</div>
+        <a href="podcast.mp3" download style="display: inline-flex; align-items: center; gap: .5rem; padding: .65rem 1.4rem; background: transparent; border: 1px solid var(--border2); color: var(--text2); border-radius: var(--r-sm); font-weight: 500; font-size: .9rem; transition: all .25s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='var(--border2)'; this.style.color='var(--text2)';">⬇️ Download MP3</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── PRICING ─── -->
+<section id="pricing" class="section">
+  <div class="pricing-header">
+    <div class="section-label">The Blueprint</div>
+    <h2 class="section-title">Get the complete system design.</h2>
+    <p class="section-sub" style="margin:0 auto;">5 comprehensive documents. 7,800+ lines. Every phase, agent, prompt, and exit tactic.</p>
+  </div>
+
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-tier">Tier 1</div>
+      <div class="price-name">The Blueprint</div>
+      <div class="price-amount">
+        <div class="price-dollar">$47</div>
+        <div class="price-per">one-time</div>
+      </div>
+      <div class="price-desc">The complete system design and marketing plan. Pay what you want above $47.</div>
+      <ul class="price-features">
+        <li>Autonomous Business Design (2,700+ lines)</li>
+        <li>Marketing Plan (1,600+ lines)</li>
+        <li>Full exit strategy with 15 subsections</li>
+        <li>Gumroad sales strategy included</li>
+        <li>Legalities & code documentation guides</li>
+      </ul>
+      <a href="https://gumroad.com" class="btn-buy btn-buy-outline">Get The Blueprint →</a>
+    </div>
+
+    <div class="price-card featured">
+      <div class="price-badge">MOST POPULAR</div>
+      <div class="price-tier">Tier 2</div>
+      <div class="price-name">The Full System</div>
+      <div class="price-amount">
+        <div class="price-dollar">$97</div>
+        <div class="price-per">one-time</div>
+      </div>
+      <div class="price-desc">Everything in Tier 1, plus the operational layer that makes it real.</div>
+      <ul class="price-features">
+        <li>Everything in The Blueprint</li>
+        <li>47 copy-paste agent prompt templates</li>
+        <li>Crypto treasury setup guide (step-by-step)</li>
+        <li>Tech stack quick-start checklist</li>
+        <li>AutonomyParameters config template</li>
+        <li>MCP (Model Context Protocol) server configuration files</li>
+      </ul>
+      <a href="https://gumroad.com" class="btn-buy btn-buy-gold">Get The Full System →</a>
+    </div>
+
+    <div class="price-card">
+      <div class="price-tier">Tier 3</div>
+      <div class="price-name">The Complete Playbook</div>
+      <div class="price-amount">
+        <div class="price-dollar">$197</div>
+        <div class="price-per">one-time</div>
+      </div>
+      <div class="price-desc">Everything, plus the exit and sales layer. 12 months of updates included.</div>
+      <ul class="price-features">
+        <li>Everything in The Full System</li>
+        <li>Exit negotiation scripts (LOI language)</li>
+        <li>Seller narrative templates (3 archetypes)</li>
+        <li>Gumroad listing copy (paste-ready)</li>
+        <li>12-month document updates access</li>
+        <li>Priority access to future additions</li>
+      </ul>
+      <a href="https://gumroad.com" class="btn-buy btn-buy-outline">Get The Playbook →</a>
+    </div>
+  </div>
+
+  <p class="pricing-note">30-day no-questions-asked refund. Pay what you want above the floor price. Affiliates earn 30% — link in your receipt.</p>
+
+  <div id="disclaimer" style="max-width:720px;margin:2.5rem auto 0;">
+    <p class="income-disclaimer">
+      <strong>Income Disclaimer:</strong> This product provides a system architecture, documentation, and implementation guidance — not a guarantee of income. Results vary significantly based on technical skill, capital invested, time committed, market conditions, and quality of execution. The financial projections shown on this page are illustrative models based on assumed scenarios; they are not historical results achieved by customers of this product. Most purchasers of business opportunity products earn little or no income. There is no guarantee you will earn any specific amount of income from implementing this system. Building a profitable autonomous business requires sustained effort and carries the risk of financial loss. By purchasing, you acknowledge you have read and understood this disclaimer. <a href="/disclosure" style="color:var(--gold);text-decoration:underline;">Full Disclosure →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 3 L35 11.5 L35 28.5 L20 37 L5 28.5 L5 11.5 Z" stroke="#F59E0B" stroke-width="1.5" fill="none"/>
+          <circle cx="20" cy="20" r="4" fill="#F59E0B"/>
+          <circle cx="20" cy="6.5" r="2.2" fill="#F59E0B" opacity=".75"/>
+          <circle cx="31" cy="13" r="2.2" fill="#F59E0B" opacity=".75"/>
+          <circle cx="31" cy="27" r="2.2" fill="#F59E0B" opacity=".75"/>
+          <circle cx="20" cy="33.5" r="2.2" fill="#F59E0B" opacity=".75"/>
+          <circle cx="9" cy="27" r="2.2" fill="#F59E0B" opacity=".75"/>
+          <circle cx="9" cy="13" r="2.2" fill="#F59E0B" opacity=".75"/>
+        </svg>
+        <div class="footer-logo-name">AUTONOMOUS BUSINESS ENGINE</div>
+      </div>
+      <div class="footer-tagline">AI agents that research, build, grow, and sell profitable SaaS (Software as a Service) businesses — designed for minimal ongoing owner time. Results vary; see income disclaimer.</div>
+    </div>
+    <div>
+      <div class="footer-col-title">Claude Code Superpowers</div>
+      <ul class="footer-links">
+        <li><a href="https://claude-code-mastery.terminalvelocityai.tech" target="_blank" rel="noopener">Claude Code Mastery →</a></li>
+        <li><a href="https://claude-code-toolkit.terminalvelocityai.tech" target="_blank" rel="noopener">Claude Code Toolkit →</a></li>
+        <li><a href="https://claude-code-teaches.terminalvelocityai.tech" target="_blank" rel="noopener">Claude Code Teaches IT Topics →</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">The Blueprint</div>
+      <ul class="footer-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#agents">Agent Stack</a></li>
+        <li><a href="#autonomy">Autonomy Score</a></li>
+        <li><a href="#exit">Exit Strategy</a></li>
+        <li><a href="#pricing">Get the Blueprint</a></li>
+        <li><a href="/disclosure">Full Disclosure</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 <a href="https://terminalvelocityai.tech/" target="_blank" rel="noopener">Terminal Velocity AI</a>. All rights reserved.</span>
+    <span>Built with Claude Code · Powered by Anthropic</span>
+  </div>
+</footer>
+
+<!-- ─── Legal Footer Bar ─── -->
+<div class="legal-footer-bar">
+  <strong>Income Disclaimer:</strong> Results vary significantly. Financial projections on this page are illustrative models, not actual customer outcomes. Most business opportunity purchasers earn little or no money. This product is for informational and educational purposes only. Terminal Velocity AI is not a registered investment adviser. Nothing here constitutes financial, investment, legal, or tax advice. Building autonomous SaaS businesses involves risk of capital loss. By purchasing you confirm you have read this disclaimer. &nbsp;|&nbsp; <a href="/disclosure">Full Disclosure</a> &nbsp;|&nbsp; <a href="https://terminalvelocityai.tech/" target="_blank" rel="noopener">terminalvelocityai.tech</a>
+</div>
+
+<script>
+// ─── Typing effect ───
+const phrases = [
+  'research winning markets.',
+  'build full-stack SaaS products.',
+  'run your marketing campaigns.',
+  'grow your MRR (Monthly Recurring Revenue) autonomously.',
+];
+let phraseIndex = 0, charIndex = 0, deleting = false;
+const typedEl = document.getElementById('typed');
+
+function type() {
+  const current = phrases[phraseIndex];
+  if (!deleting) {
+    typedEl.textContent = current.slice(0, ++charIndex);
+    if (charIndex === current.length) {
+      deleting = true;
+      setTimeout(type, 2200);
+      return;
+    }
+  } else {
+    typedEl.textContent = current.slice(0, --charIndex);
+    if (charIndex === 0) {
+      deleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+  }
+  setTimeout(type, deleting ? 38 : 58);
+}
+type();
+
+// ─── Counter animation ───
+function animateCounter(el, target, duration = 1600) {
+  let start = null;
+  const step = (ts) => {
+    if (!start) start = ts;
+    const progress = Math.min((ts - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(ease * target);
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+// ─── Intersection Observer for animations ───
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    // Counter cards
+    if (entry.target.classList.contains('stat-card')) {
+      const val = entry.target.querySelector('[data-target]');
+      if (val) animateCounter(val, parseInt(val.dataset.target));
+    }
+
+    // Meter bars
+    if (entry.target.classList.contains('autonomy-grid')) {
+      entry.target.querySelectorAll('.meter-fill').forEach((bar, i) => {
+        setTimeout(() => {
+          bar.style.width = bar.dataset.width + '%';
+        }, i * 100);
+      });
+    }
+
+    // Score ring
+    if (entry.target.classList.contains('autonomy-grid')) {
+      setTimeout(() => {
+        document.getElementById('scoreFill').classList.add('animate');
+        animateCounter(document.getElementById('scoreNum'), 94, 2000);
+      }, 400);
+    }
+
+    // Wealth bars
+    if (entry.target.classList.contains('wealth-chart')) {
+      entry.target.querySelectorAll('.wealth-bar').forEach((bar, i) => {
+        setTimeout(() => {
+          bar.style.width = bar.dataset.width + '%';
+        }, i * 200);
+      });
+    }
+
+    io.unobserve(entry.target);
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.stat-card, .autonomy-grid, .wealth-chart').forEach(el => io.observe(el));
+
+// ─── Phase tabs ───
+const phaseData = [
+  {
+    body: "The Research Agent continuously monitors Reddit, Hacker News, Product Hunt, X, G2 reviews, and GitHub trending repos. Every opportunity is scored across 8 weighted dimensions — pain intensity, market size, buildability, monetisability, competition gap, time-to-revenue, defensibility, and trend alignment. Only opportunities scoring ≥ 70/100 advance.",
+    actions: ["Aggregate signals from 8+ platforms daily","Score each opportunity across 8 weighted dimensions","Cross-reference against portfolio to avoid overlap","Generate structured opportunity reports","Surface top 3 in weekly digest — no action needed from you"]
+  },
+  {
+    body: "Every validated opportunity gets a $20 landing page test before a single line of production code is written. The engine deploys a Gemini-generated 'coming soon' page, drives targeted traffic, and measures email sign-up rate. The threshold is 2%. Below that — the idea is archived and the next candidate moves up.",
+    actions: ["Deploy landing page in under 2 hours (Vercel + Gemini)","Drive $20 of targeted paid traffic via Google Ads","Measure signup rate over 72 hours","≥ 2% → advance to Phase 3","< 2% → archive and score next candidate"]
+  },
+  {
+    body: "The Engineering Agent uses the Claude Code SDK (Software Development Kit) to autonomously write, test, and deploy a complete Next.js application. The full stack — auth, database, payments, email, analytics, error monitoring — is configured from a proven template. Every deployment must pass a 10-point automated quality gate before going live.",
+    actions: ["Scaffold Next.js 15 + Neon + Clerk + Stripe","Generate all visual assets via Gemini Imagen 3","Write API routes, server actions, and data models","Run automated test suite — unit + E2E (End-to-End) via Playwright","Deploy to Vercel — live in 54–96 hours of AI time"]
+  },
+  {
+    body: "The Growth Agent launches and optimises the full marketing stack autonomously. Paid ads scale when ROAS ≥ 2.5 and pause when ROAS < 1.5 — no human decision required. The SEO content factory produces pillar posts, comparison pages, and integration pages on a weekly cadence. Email sequences, outbound, and referral programs all activate automatically.",
+    actions: ["Launch Google + Meta ads with ROAS-gated auto-scaling","Publish 3–6 SEO articles per month (Gemini + Claude pipeline)","Activate 5-email onboarding + churn prevention sequences","Run cold email + LinkedIn outbound autonomously","A/B (split) test landing page via Vercel Edge Config"]
+  },
+  {
+    body: "The Exit Agent monitors a live Exit Score (0–100) updated daily across 8 signals. When it crosses 70, a 12-month pre-sale sprint begins — price increases, annual plan conversions, review building, and cost optimisation. At 85, the business auto-lists on Acquire.com and MicroAcquire. The engine qualifies buyers, manages the data room, and engineers competitive tension. Only the LOI review and final signature require the human owner.",
+    actions: ["Live Exit Score across 8 signals, updated daily","Pre-sale sprint: price increases, churn hardening, review building","Auto-list on marketplaces when score hits 85","Qualify and score inbound buyers automatically","Prepare complete data room — CIM (Confidential Information Memorandum), financials, technical docs"]
+  }
+];
+
+document.querySelectorAll('.phase-card').forEach(card => {
+  card.addEventListener('click', () => {
+    document.querySelectorAll('.phase-card').forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+    const idx = parseInt(card.dataset.phase);
+    const data = phaseData[idx];
+    document.getElementById('phaseBody').textContent = data.body;
+    const ul = document.getElementById('phaseActions');
+    ul.innerHTML = data.actions.map(a => `<li>${a}</li>`).join('');
+  });
+});
+
+// ─── Active nav on scroll ───
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--text)' : '';
+  });
+}, { passive: true });
+</script>
+</body>
+</html>
