@@ -1842,9 +1842,10 @@ document.querySelectorAll('[data-agent]').forEach(card => {
       </div>
     `;
     document.getElementById('modal-content').innerHTML = html;
-    document.getElementById('agent-modal').style.display = 'flex';
-    document.getElementById('agent-modal').style.alignItems = 'center';
-    document.getElementById('agent-modal').style.justifyContent = 'center';
+    const modal = document.getElementById('agent-modal');
+    modal.style.display = 'flex';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'center';
   });
 });
 
