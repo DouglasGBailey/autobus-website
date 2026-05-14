@@ -1107,7 +1107,7 @@ footer {
   <p class="section-sub">Each agent has a defined role, budget authority, and escalation path. Claude Opus 4.7 coordinates; specialised models execute.</p>
 
   <div class="agents-grid">
-    <div class="agent-card">
+    <div class="agent-card" data-agent="orchestrator" style="cursor: pointer;">
       <div class="agent-header">
         <div class="agent-icon">🎯</div>
         <div>
@@ -1118,7 +1118,7 @@ footer {
       <div class="agent-desc">Reads business state, decomposes the mission, assigns sub-tasks, and approves all decisions above the micro-threshold. The strategic brain.</div>
       <span class="agent-budget">Runs every 4 hours + on event triggers</span>
     </div>
-    <div class="agent-card">
+    <div class="agent-card" data-agent="research" style="cursor: pointer;">
       <div class="agent-header">
         <div class="agent-icon">🔭</div>
         <div>
@@ -1129,7 +1129,7 @@ footer {
       <div class="agent-desc">Monitors market signals, scores opportunities, and validates ideas with $20 landing page tests. Never wastes build budget on unvalidated ideas.</div>
       <span class="agent-budget">≤ $5 USDC (USD Coin) per research cycle</span>
     </div>
-    <div class="agent-card">
+    <div class="agent-card" data-agent="engineering" style="cursor: pointer;">
       <div class="agent-header">
         <div class="agent-icon">🏗️</div>
         <div>
@@ -1140,7 +1140,7 @@ footer {
       <div class="agent-desc">Writes all application code, configures deployments, runs automated test suites, and commits to GitHub. Full-stack in 54–96 hours of AI time.</div>
       <span class="agent-budget">≤ $20 USDC per deployment</span>
     </div>
-    <div class="agent-card">
+    <div class="agent-card" data-agent="creative" style="cursor: pointer;">
       <div class="agent-header">
         <div class="agent-icon">🎨</div>
         <div>
@@ -1151,7 +1151,7 @@ footer {
       <div class="agent-desc">Generates all marketing creative — landing page copy, hero images, ad variants, demo videos, and email sequences. No designer required.</div>
       <span class="agent-budget">≤ $10 USDC per creative sprint</span>
     </div>
-    <div class="agent-card">
+    <div class="agent-card" data-agent="growth" style="cursor: pointer;">
       <div class="agent-header">
         <div class="agent-icon">📣</div>
         <div>
@@ -1162,7 +1162,7 @@ footer {
       <div class="agent-desc">Launches and optimises paid campaigns with ROAS-gated auto-scaling, runs SEO content factory, manages outbound sequences, and tracks all attribution.</div>
       <span class="agent-budget">≤ $500 USDC/day (ROAS-gated)</span>
     </div>
-    <div class="agent-card">
+    <div class="agent-card" data-agent="revenue" style="cursor: pointer;">
       <div class="agent-header">
         <div class="agent-icon">💎</div>
         <div>
@@ -1173,7 +1173,7 @@ footer {
       <div class="agent-desc">Monitors Stripe webhooks, routes profits to sub-wallets, pays vendor invoices in USDC, and sweeps the owner's 10% share automatically each month.</div>
       <span class="agent-budget">Full treasury authority within parameters</span>
     </div>
-    <div class="agent-card">
+    <div class="agent-card" data-agent="evolution" style="cursor: pointer;">
       <div class="agent-header">
         <div class="agent-icon">📊</div>
         <div>
@@ -1186,6 +1186,14 @@ footer {
     </div>
   </div>
 </section>
+
+<!-- ─── AGENT MODALS ─── -->
+<div id="agent-modal" style="display: none; position: fixed; inset: 0; background: rgba(2,6,15,.95); backdrop-filter: blur(8px); z-index: 200; padding: 2rem; overflow-y: auto;">
+  <div style="max-width: 720px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 3rem; position: relative;">
+    <button onclick="document.getElementById('agent-modal').style.display='none'" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; color: var(--text2); cursor: pointer;">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
 
 <div class="divider"></div>
 
@@ -1694,6 +1702,149 @@ window.addEventListener('scroll', () => {
     a.style.color = a.getAttribute('href') === '#' + current ? 'var(--text)' : '';
   });
 }, { passive: true });
+
+// ─── Agent modals ───
+const agentDetails = {
+  orchestrator: {
+    name: 'Master Orchestrator',
+    icon: '🎯',
+    model: 'Claude Opus 4.7',
+    desc: 'The strategic brain of the entire system.',
+    details: [
+      'Reads current business state and performance metrics',
+      'Decomposes quarterly missions into executable sub-tasks',
+      'Assigns work to specialized agents with authority budgets',
+      'Approves all decisions above the micro-threshold',
+      'Escalates edge cases and strategic pivots',
+      'Runs every 4 hours + on event triggers',
+      'Maintains coherence across all 6 specialized agents'
+    ]
+  },
+  research: {
+    name: 'Research Agent',
+    icon: '🔭',
+    model: 'Claude Sonnet 4.6 + Brave Search',
+    desc: 'Market intelligence and opportunity validation.',
+    details: [
+      'Monitors Reddit, Hacker News, Product Hunt, X, G2, GitHub trending',
+      'Scores opportunities across 8 weighted dimensions',
+      'Pain intensity, market size, buildability, monetization potential',
+      'Validates high-scoring ideas with $20 landing page tests',
+      'Measures 2% signup threshold before greenlighting builds',
+      'Prevents wasted engineering budget on unvalidated ideas',
+      'Budget: ≤ $5 USDC per research cycle'
+    ]
+  },
+  engineering: {
+    name: 'Engineering Agent',
+    icon: '🏗️',
+    model: 'Claude Code — Sonnet 4.6',
+    desc: 'Full-stack autonomous product development.',
+    details: [
+      'Writes all application code from scratch',
+      'Configures Next.js 15 + Neon + Clerk + Stripe stack',
+      'Implements automated test suites and CI/CD',
+      'Commits to GitHub and deploys to Vercel',
+      'Full-stack product in 54–96 hours of AI time',
+      'Passes 10-point quality gate before deployment',
+      'Budget: ≤ $20 USDC per deployment'
+    ]
+  },
+  creative: {
+    name: 'Creative Agent',
+    icon: '🎨',
+    model: 'Gemini 2.0 Pro + Imagen 3',
+    desc: 'Marketing creative and brand assets.',
+    details: [
+      'Generates landing page copy and hero messaging',
+      'Creates hero images and visual assets via Imagen 3',
+      'Produces ad variants for A/B testing',
+      'Directs and edits demo videos',
+      'Writes email sequences and nurture flows',
+      'No designer or copywriter required',
+      'Budget: ≤ $10 USDC per creative sprint'
+    ]
+  },
+  growth: {
+    name: 'Growth Agent',
+    icon: '📣',
+    model: 'Claude Sonnet 4.6 + Marketing APIs',
+    desc: 'Autonomous demand generation and scaling.',
+    details: [
+      'Launches Google and Meta paid campaigns',
+      'Auto-scales when ROAS ≥ 2.5; pauses when ROAS < 1.5',
+      'Publishes 3–6 SEO articles monthly via content factory',
+      'Manages 5-email onboarding and churn prevention sequences',
+      'Runs cold email and LinkedIn outbound autonomously',
+      'A/B tests landing pages via Vercel Edge Config',
+      'Budget: ≤ $500 USDC/day (ROAS-gated scaling)'
+    ]
+  },
+  revenue: {
+    name: 'Revenue Agent',
+    icon: '💎',
+    model: 'Claude Haiku 4.5',
+    desc: 'Treasury and financial operations.',
+    details: [
+      'Monitors Stripe webhooks in real-time',
+      'Routes profits to sub-wallets and vendor accounts',
+      'Pays vendor invoices automatically in USDC',
+      'Sweeps owner\'s 10% share to personal wallet monthly',
+      'Maintains custody of operating budget',
+      'Full treasury authority within pre-approved parameters',
+      'Runs 24/7 without human intervention'
+    ]
+  },
+  evolution: {
+    name: 'Evolution Agent',
+    icon: '📊',
+    model: 'Claude Opus 4.7 — Weekly',
+    desc: 'Strategic optimization and continuous improvement.',
+    details: [
+      'Reviews P&L and unit economics weekly',
+      'Analyzes customer feedback and support tickets',
+      'Examines conversion funnels and churn patterns',
+      'Proposes product pivots and feature prioritization',
+      'Runs prompt tournaments to optimize agent instructions',
+      'Updates master strategy based on learnings',
+      'Runs once per week for strategic recalibration'
+    ]
+  }
+};
+
+document.querySelectorAll('[data-agent]').forEach(card => {
+  card.addEventListener('click', () => {
+    const agentKey = card.getAttribute('data-agent');
+    const agent = agentDetails[agentKey];
+    const html = `
+      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+        <div style="font-size: 3rem;">${agent.icon}</div>
+        <div>
+          <h2 style="font-size: 1.8rem; margin: 0; color: var(--text);">${agent.name}</h2>
+          <p style="margin: 0.25rem 0 0 0; color: var(--teal); font-weight: 600;">${agent.model}</p>
+          <p style="margin: 0.5rem 0 0 0; color: var(--text2); font-size: 0.9rem;">${agent.desc}</p>
+        </div>
+      </div>
+      <div style="background: var(--surface2); border: 1px solid var(--border); border-radius: var(--r-sm); padding: 1.5rem; margin-top: 1.5rem;">
+        <h3 style="color: var(--gold); font-size: 0.9rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 1rem;">Key Responsibilities</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          ${agent.details.map(detail => `<li style="padding: 0.5rem 0; color: var(--text2); font-size: 0.95rem; border-bottom: 1px solid var(--border);"><span style="color: var(--gold); margin-right: 0.75rem;">→</span>${detail}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+    document.getElementById('modal-content').innerHTML = html;
+    document.getElementById('agent-modal').style.display = 'flex';
+    document.getElementById('agent-modal').style.alignItems = 'center';
+    document.getElementById('agent-modal').style.justifyContent = 'center';
+  });
+});
+
+// Close modal on background click
+document.getElementById('agent-modal').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('agent-modal')) {
+    document.getElementById('agent-modal').style.display = 'none';
+  }
+});
 </script>
 </body>
 </html>
