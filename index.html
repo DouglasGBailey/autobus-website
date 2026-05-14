@@ -1191,8 +1191,8 @@ footer {
 </section>
 
 <!-- ─── AGENT MODALS ─── -->
-<div id="agent-modal" style="display: none; position: fixed; inset: 0; background: rgba(2,6,15,.95); backdrop-filter: blur(8px); z-index: 200; padding: 2rem; overflow-y: auto;">
-  <div style="max-width: 720px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 3rem; position: relative;">
+<div id="agent-modal" style="display: none; position: fixed; inset: 0; background: rgba(2,6,15,.95); backdrop-filter: blur(8px); z-index: 200; padding: 2rem; overflow-y: auto; align-items: center; justify-content: center;">
+  <div style="max-width: 720px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 3rem; position: relative;">
     <button onclick="document.getElementById('agent-modal').style.display='none'" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; color: var(--text2); cursor: pointer;">✕</button>
     <div id="modal-content"></div>
   </div>
@@ -1842,10 +1842,7 @@ document.querySelectorAll('[data-agent]').forEach(card => {
       </div>
     `;
     document.getElementById('modal-content').innerHTML = html;
-    const modal = document.getElementById('agent-modal');
-    modal.style.display = 'flex';
-    modal.style.alignItems = 'center';
-    modal.style.justifyContent = 'center';
+    document.getElementById('agent-modal').style.display = 'flex';
   });
 });
 
